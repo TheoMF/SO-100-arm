@@ -11,7 +11,7 @@
                 <xacro:unless value="${use_fake_hardware}">
                     <plugin>so_arm_100_controller/SOARM100Interface</plugin>
                     <param name="use_serial">true</param>
-                    <param name="serial_port">/dev/ttyUSB0</param>
+                    <param name="serial_port">/dev/ttyACM0</param>
                     <param name="serial_baudrate">1000000</param>
                 </xacro:unless>
             </hardware>
