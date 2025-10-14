@@ -14,11 +14,11 @@ controller_manager:
 so_100_arm_controller:
   ros__parameters:
     joints:
-      - Shoulder_Rotation
-      - Shoulder_Pitch
-      - Elbow
-      - Wrist_Pitch
-      - Wrist_Roll
+      - shoulder_pan
+      - shoulder_lift
+      - elbow_flex
+      - wrist_flex
+      - wrist_roll
     
     interface_name: position
     command_interfaces:
@@ -43,7 +43,7 @@ so_100_arm_controller:
 so_100_arm_gripper_controller:
   ros__parameters:
     joints:
-      - Gripper
+      - gripper
     interface_name: position
     command_interfaces:
       - position
