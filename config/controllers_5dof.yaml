@@ -14,18 +14,17 @@ controller_manager:
 joint_trajectory_controller:
   ros__parameters:
     joints:
-      - Shoulder_Rotation
-      - Shoulder_Pitch
-      - Elbow
-      - Wrist_Pitch
-      - Wrist_Roll
+      - shoulder_pan
+      - shoulder_lift
+      - elbow_flex
+      - wrist_flex
+      - wrist_roll
     
     interface_name: position
     command_interfaces:
       - position
     state_interfaces:
       - position
-      - velocity
     state_publish_rate: 50.0
     action_monitor_rate: 20.0
     constraints:
@@ -38,5 +37,5 @@ joint_trajectory_controller:
 
 gripper_controller:
   ros__parameters:
-    joint: Gripper
+    joint: gripper
     interface_name: position

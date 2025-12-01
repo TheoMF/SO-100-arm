@@ -4,7 +4,7 @@
     <xacro:arg name="use_fake_hardware" default="false"/>
 
     <!-- Import so_100_arm urdf file -->
-    <xacro:include filename="$(find so_100_arm)/urdf/so101_new_calib.urdf" />
+    <xacro:include filename="$(find so_100_arm)/urdf/so101_new_calib.urdf.xacro" />
 
     <!-- Import control_xacro -->
     <xacro:include filename="so_100_arm.ros2_control.xacro" />
