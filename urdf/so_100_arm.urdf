@@ -110,7 +110,8 @@
   </link>
   <joint
     name="Shoulder_Rotation"
-    type="continuous">
+    type="revolute">
+    <limit effort="10.0" lower="-2.8973" upper="2.8973" velocity="2.175"/>
     <origin
       xyz="0 -0.0452 0.0165"
       rpy="1.5708 0 0" />
@@ -163,7 +164,8 @@
   </link>
   <joint
     name="Shoulder_Pitch"
-    type="continuous">
+    type="revolute">
+    <limit effort="10.0" lower="-2.8973" upper="2.8973" velocity="2.175"/>
     <origin
       xyz="0 0.1025 0.0306"
       rpy="0 0 0" />
@@ -216,7 +218,8 @@
   </link>
   <joint
     name="Elbow"
-    type="continuous">
+    type="revolute">
+    <limit effort="10.0" lower="-2.8973" upper="2.8973" velocity="2.175"/>
     <origin
       xyz="0 0.11257 0.028"
       rpy="0 0 0" />
@@ -269,7 +272,8 @@
   </link>
   <joint
     name="Wrist_Pitch"
-    type="continuous">
+    type="revolute">
+    <limit effort="10.0" lower="-2.8973" upper="2.8973" velocity="2.175"/>
     <origin
       xyz="0 0.0052 0.1349"
       rpy="0 0 0" />
@@ -302,7 +306,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://so_100_arm/models/so_100_arm_5dof/meshes/Fixed_Gripper.STL" />
+          filename="package://so_100_arm/models/so_100_arm_5dof/meshes/Wrist_Cam_Mount_32x32_UVC_Module_SO101.stl" />
       </geometry>
       <material
         name="">
@@ -315,14 +319,16 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
+      <!-- "package://so_100_arm/models/so_100_arm_5dof/meshes/Fixed_Gripper.STL" /> -->
         <mesh
-          filename="package://so_100_arm/models/so_100_arm_5dof/meshes/Fixed_Gripper.STL" />
+          filename=  "package://so_100_arm/models/so_100_arm_5dof/meshes/Wrist_Cam_Mount_32x32_UVC_Module_SO101.stl" /> 
       </geometry>
     </collision>
   </link>
   <joint
     name="Wrist_Roll"
-    type="continuous">
+    type="revolute">
+    <limit effort="10.0" lower="-2.8973" upper="2.8973" velocity="2.175"/>
     <origin
       xyz="0 -0.0601 0"
       rpy="0 0 0" />
@@ -375,7 +381,8 @@
   </link>
   <joint
     name="Gripper"
-    type="continuous">
+    type="revolute">
+    <limit effort="10.0" lower="-2.8973" upper="2.8973" velocity="2.175"/>
     <origin
       xyz="-0.0202 -0.0244 0"
       rpy="3.1416 0 3.1416" />
